@@ -3,5 +3,5 @@
 # destroy everything from an EC2, setup the app and run it
 
 ./replace-vars   # update hosts file with ip of droplet and name of private ssh key
-ansible-playbook install.yml -i hosts -l server -t setup2
+ansible-playbook install.yml -i hosts -l server -t setup
 

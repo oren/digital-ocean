@@ -36,4 +36,4 @@
 
   - name: home folder
     copy: src=./home/ dest=/home/{{user}}/ owner={{user}} group={{user}} mode=0600
-    tags: setup2
+    tags: setup

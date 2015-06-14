@@ -3,8 +3,8 @@
 ## Setup
 
 1. cp .env.example .env
-1. Copy the [private ssh key](https://cloud.digitalocean.com/settings/security) that you want to use with that droplet into private_ssh_key folder
 1. Update .env with your [Personal Access Token](https://cloud.digitalocean.com/settings/applications)
+1. Copy the [private ssh key](https://cloud.digitalocean.com/settings/security) that you want to use with that droplet into private_ssh_key folder
 
 ## Run
 

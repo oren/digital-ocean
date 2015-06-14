@@ -16,6 +16,8 @@ The last output will be the ssh command to your new droplet.
 
 ## Ansible note
 
-to Generate [crypted password](http://docs.ansible.com/faq.html#how-do-i-generate-crypted-passwords-for-the-user-module)
+If you want to generate different crypted password you can use this command:
 
     mkpasswd --method=SHA-512 <password to crypt>
+
+([ansible docs](http://docs.ansible.com/faq.html#how-do-i-generate-crypted-passwords-for-the-user-module))

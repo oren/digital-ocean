@@ -7,7 +7,6 @@
     password: $6$x.95LIU4dS$4WLX7ATLFUkAwMtTAJqrIcchJPIJZgsNQ1iUhyNrzOqvyr0P3QhcP5V8WLWrsFEZOlPV7aTAownXqzLmlul6x1
 
   tasks:
-
   - name: create group
     group: name={{user}} state=present
     tags: setup
@@ -35,26 +34,6 @@
     sudo: yes
     tags: setup
 
-  - name: .bash_aliases
-    copy: src=./templates/bash_aliases dest=/home/{{user}}/.bash_aliases owner={{user}} group={{user}} mode=0600
-    tags: setup
-
-  - name: .tmux.conf
-    copy: src=./templates/tmux.conf dest=/home/{{user}}/.tmux.conf owner={{user}} group={{user}} mode=0600
-    tags: setup
-
-  - name: .vimrc
-    copy: src=./templates/vimrc dest=/home/{{user}}/.vimrc owner={{user}} group={{user}} mode=0600
-    tags: setup
-
-  - name: .vim
-    copy: src=./templates/vim/* dest=/home/{{user}}/.vim/* owner={{user}} group={{user}} mode=0600
-    tags: setup
-
-  # - name: known_hosts file
-  #   copy: src=../templates/known_hosts dest=/home/{{user}}/.ssh/known_hosts owner={{user}} group={{user}} mode=0644
-  #   tags: setup
-
-  # - name: rsa private key for github
-  #   copy: src=../templates/git-deploy dest=/home/{{user}}/.ssh/id_rsa owner={{user}} group={{user}} mode=0600
-  #   tags: setup
+  - name: home folder
+    copy: src=./home/ dest=/home/{{user}}/ owner={{user}} group={{user}} mode=0600
+    tags: setup2

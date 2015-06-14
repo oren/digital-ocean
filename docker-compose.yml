@@ -1,0 +1,6 @@
+app:
+  build: .
+  volumes:
+   - .:/src
+  env_file: .env
+  command: "./create-droplet"

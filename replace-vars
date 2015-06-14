@@ -1,0 +1,11 @@
+#!/bin/sh
+
+cp hosts.example hosts
+
+ssh_key=$(ls ./private_ssh_key)
+replace_key=s/SSH_KEY/$ssh_key/g
+sed -i "$replace_key" hosts
+
+ip=$(./get-server-ip)
+replace_ip=s/SERVER_IP/$ip/g
+sed -i "$replace_ip" hosts

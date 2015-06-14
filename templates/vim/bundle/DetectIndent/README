@@ -1,0 +1,27 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1171
+
+This script provides a command which will attempt to guess the correct indent settings for an open file, for use when there is no modeline available. Note that this is a pure vim implementation, and doesn't require any external applications or interpreters.
+
+Usage:
+
+:DetectIndent
+
+May also be used in an autocommand, for example:
+
+:autocmd BufReadPost * :DetectIndent
+
+Options:
+
+To prefer 'expandtab' to 'noexpandtab' when no detection is possible: 
+:let g:detectindent_preferred_expandtab = 1
+
+To specify a preferred indent level when no detection is possible:
+:let g:detectindent_preferred_indent = 4
+
+Notes:
+
+Detection is by no means perfect. It won't work if files use especially perverse combinations of spaces and tabs, or weird tab widths. Bug reports and patches encouraged...
+
+Keeping things up to date on vim.org is a nuisance. For the latest version, visit:
+
+    http://github.com/ciaranm/detectindent

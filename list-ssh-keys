@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# list of ssh keys
+curl -X GET "https://api.digitalocean.com/v2/account/keys" -H "Authorization: Bearer $TOKEN" | jq '.'

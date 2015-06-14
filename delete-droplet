@@ -1,0 +1,4 @@
+#!/bin/sh
+
+## delete droplet
+curl -X DELETE "https://api.digitalocean.com/v2/droplets/3723960" -H "Authorization: Bearer $TOKEN" | jq '.'

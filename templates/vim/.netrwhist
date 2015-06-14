@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/oren/projects/sanguine/research/sass/layout'
+let g:netrw_dirhist_2='/home/oren/projects/sanguine/research/sass'
+let g:netrw_dirhist_3='/home/oren/projects/sanguine/research'
+let g:netrw_dirhist_4='/home/oren/projects/sanguine/BookOfDraws/server'
+let g:netrw_dirhist_5='/home/oren/projects/sanguine/patient/donate-proxy'
+let g:netrw_dirhist_6='/home/oren/projects/sanguine/research/nginx'
+let g:netrw_dirhist_7='/home/oren/projects/sanguine/s1/deploy/bin'
+let g:netrw_dirhist_8='/home/oren/misc/weechat'
+let g:netrw_dirhist_9='/home/oren/foo'

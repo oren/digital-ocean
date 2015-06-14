@@ -1,0 +1,6 @@
+#!/bin/sh
+
+SSH_KEY_ID=$(./get-ssh-key-id)
+
+# create droplet
+curl -X POST "https://api.digitalocean.com/v2/droplets" -d'{"name":"'"$DROPLET_NAME"'","region":"sfo1","size":"512mb","image":"ubuntu-14-04-x64","ssh_keys":["'"$SSH_KEY_ID"'"],"backups":false,"ipv6":false,"user_data":null,"private_networking":null}' -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json"

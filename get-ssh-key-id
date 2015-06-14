@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# return id of ssh key based on it's name 
+filter='.ssh_keys[]| select(.name=="'"$SSH_KEY"'")| .id'
+curl -X GET "https://api.digitalocean.com/v2/account/keys" -H "Authorization: Bearer $TOKEN" | jq "$filter"

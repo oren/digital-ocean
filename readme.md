@@ -8,13 +8,8 @@
 
 ## Run
 
-    docker-compose up
-
-## Misc
-
     docker-compose run app ./create-droplet           # create new droplet
     docker-compose run app ./install                  # install everything you need on the droplet
-
 
 ## Ansible
 

@@ -147,7 +147,6 @@ alias sh='apt-cache show'
 alias r='reset'
 
 # git
-alias git=hub
 alias gc='git commit -v'
 alias gca='git commit -v -a'
 alias gpp='git pull && git push'

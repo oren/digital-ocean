@@ -3,4 +3,4 @@ app:
   volumes:
    - .:/src
   env_file: .env
-  command: "./create-droplet && ./install"
+  command: "./create-and-install"

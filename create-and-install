@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# create droplet and install everything on it
+./create-droplet
+./install

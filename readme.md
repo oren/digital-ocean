@@ -9,9 +9,12 @@
 ## Run
 
     docker-compose run app ./create-droplet   # create new droplet
-    docker-compose run app ./install          # install everything you need on the droplet
+    docker-compose run app ./install          # installs everything you need on the droplet
 
-## Ansible
+Everything you put in the `home` folder will be copied to the home of the dev user.
+The last output will be the ssh command to your new droplet.
+
+## Ansible note
 
 to Generate [crypted password](http://docs.ansible.com/faq.html#how-do-i-generate-crypted-passwords-for-the-user-module)
 

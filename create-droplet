@@ -1,6 +1,10 @@
 #!/bin/sh
 
+source .colors
+
 SSH_KEY_ID=$(./get-ssh-key-id)
 
 # create droplet
-curl -X POST "https://api.digitalocean.com/v2/droplets" -d'{"name":"'"$DROPLET_NAME"'","region":"'"$REGION"'","size":"'"$SIZE"'","image":"'"$IMAGE"'","ssh_keys":["'"$SSH_KEY_ID"'"],"backups":false,"ipv6":false,"user_data":null,"private_networking":null}' -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json"
+# curl -X POST "https://api.digitalocean.com/v2/droplets" -d'{"name":"'"$DROPLET_NAME"'","region":"'"$REGION"'","size":"'"$SIZE"'","image":"'"$IMAGE"'","ssh_keys":["'"$SSH_KEY_ID"'"],"backups":false,"ipv6":false,"user_data":null,"private_networking":null}' -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json"
+
+echo -e "$cGREEN Your droplet was created. Install everything using: docker-compose run app ./install $cNORMAL"

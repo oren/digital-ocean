@@ -1,0 +1,20 @@
+#!/bin/sh
+
+c_='\033[';
+cBLACK=$c_'0;30m';     cDARKGRAY=$c_'1;30m';
+cBLUE=$c_'0;34m';      cLIGHTBLUE=$c_'1;34m';
+cGREEN=$c_'0;32m';     cLIGHTGREEN=$c_'1;32m';
+cCYAN=$c_'0;36m';      cLIGHTCYAN=$c_'1;36m';
+cRED=$c_'0;31m';       cLIGHTRED=$c_'1;31m';
+cPURPLE=$c_'0;35m';    cLIGHTPURPLE=$c_'1;35m';
+cBROWN=$c_'0;33m';     cYELLOW=$c_'1;33m';
+cLIGHTGRAY=$c_'0;37m'; cWHITE=$c_'1;37m';
+
+cNORMAL=$c_'00m';
+
+cbNORMAL=$c_'40m'; cbRED=$c_'41m';
+cbGREEN=$c_'42m';  cbBROWN=$c_'43m';
+cbBLUE=$c_'44m';   cbPURPLE=$c_'45m';
+cbCYAN=$c_'46m';   cbWHITE=$c_'47m';
+
+# echo -e "$cGREEN green $cNORMAL"

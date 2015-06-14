@@ -8,5 +8,5 @@ source .colors
 ansible-playbook install.yml -i hosts -l server -t setup
 
 ip=$(./get-server-ip)
-echo -e "$cGREEN Your server is ready. Access it with: ssh dev@$ip $cNORMAL"
+echo -e "$cGREEN Your server is ready. Access it with: ssh dev@$ip  password: dev $cNORMAL"
 

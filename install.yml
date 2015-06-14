@@ -13,12 +13,10 @@
     - git
     sudo: yes
 
-  - name: install docker
   - shell: curl -sSL https://get.docker.com/ubuntu/ | sudo sh
     sudo: yes
 
-  - name: install docker-compose
-  - shell: curl -L https://github.com/docker/compose/releases/download/1.2.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose  && chmod +x /usr/local/bin/docker-compose
+  - shell: "curl -L https://github.com/docker/compose/releases/download/1.2.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose  && chmod +x /usr/local/bin/docker-compose"
     sudo: yes
 
   - name: create user

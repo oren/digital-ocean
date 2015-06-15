@@ -1,4 +1,36 @@
-call pathogen#infect()
+" Vundle setup
+" ============================================================================
+" to install: vim +PluginInstall +qall
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" plugins
+" ============================================================================
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'kien/ctrlp.vim'                      " Fuzzy finder
+Plugin 'tomtom/tcomment_vim'
+
+Plugin 'fatih/vim-go'                        " Go development plugin
+Plugin 'majutsushi/tagbar'                   " class outline viewer
+
+" snippets (all 4 needed)
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 syntax enable
 set background=dark
